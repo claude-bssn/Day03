@@ -1,0 +1,6 @@
+Sur machine host ifconfig pour recupérer l'ip 
+Puis on lance la commande nc -l 23456 pour spécifier le nom du port sur le quel écouter
+sur l'autre machine nc 192.168.1.101 23456 ici on renseigne l'adresse ip de la machine host et le port sur le quel elle ecoute 
+
+cf les captures d'écran pour vérification fonctionnelle 
+ 

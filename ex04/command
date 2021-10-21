@@ -1,0 +1,7 @@
+to check if 'backup' dir exist 
+test -d "/Users/admin/Documents/backup" && : || mkdir "/Users/admin/Documents/backup &&
+
+to compress picture file
+tar -cjf /Users/admin/Documents/comp.tar.gz -C /Users/admin Pictures
+
+ 

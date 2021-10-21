@@ -1,4 +1,3 @@
 parametre crontab
 
-0 8 * * 1-5 test -d "/Users/admin/Documents/Meteo" && : >> /Users/admin/Documents/Meteo/meteoOfTheDay.txt || mkdir /Users/admin/Documents/Meteo && curl wttr.in/batman > /Users/admin/Documents/Meteo/meteoOfTheDay.txt 
-
+0 8 * * 1-5 test -d "/Users/admin/Documents/Meteo" && : || mkdir /Users/admin/Documents/Meteo && curl wttr.in/batman > /Users/admin/Documents/Meteo/meteoOfTheDay.txt

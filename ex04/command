@@ -1,7 +1,9 @@
-to check if 'backup' dir exist 
-test -d "/Users/admin/Documents/backup" && : || mkdir "/Users/admin/Documents/backup &&
+J'ai créé un dossier script à la racine, dans lequel j'ai ajouté un dossier bin. J'ai changé les autorisations d'écriture de ses deux dossiers. C'est là où j'ai enregistré mon script backup.sh.
 
-to compress picture file
-tar -cjf /Users/admin/Documents/comp.tar.gz -C /Users/admin Pictures
 
- 
+J'ai commencé par créer un script qui vérifie si le dossier backup situé dans mes documents existe. Si ce n'est pas le cas, le script crée le dossier. 
+Puis je renseigne une variable contenant la date au bon format.
+Ensuite, j'utilise tar pour compresser uniquement le dossier Pictures directement dans le dossier backup situé dans Document.
+
+
+Par la suite dans le crontab, je renseigne la path du script avec le paramètre de lancement tous les jours à 7h30.  
